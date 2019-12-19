@@ -25,10 +25,10 @@ def find_greater_pair(src)
   row_index = 0 
   element_index = 0 
   while row_index < src.count do 
-    if row_index[element_index] > row_index[element_index] 
+    if [element_index] > [element_index + 1] 
       outer_results << src[row_index][element_index]
       else
-        outer_results << src[row_index][element_index]
+        outer_results << src[row_index][element_index + 1]
       end 
       row_index += 1 
     end 
